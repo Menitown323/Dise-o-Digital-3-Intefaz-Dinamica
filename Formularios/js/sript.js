@@ -7,7 +7,10 @@ function crearimagen(event){
     const imagen = new Image();
     imagen.src = "../img/picahu.jpg";
     imagen.classList.add("imagen-nueva");
+    const titulo = document.createElement("h2");
+    titulo.textContent = imagen.src.substring(imagen.src.lastIndexOf('/')+1);
     elementos.appendChild(imagen);
+    elementos.appendChild(titulo);
     }
     /*const imagen = '<img src="img/picahu.jpg" class="imagen-nueva">'
     elementos.innerHTML = imagen*/
