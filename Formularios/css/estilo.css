@@ -1,27 +1,30 @@
 *{
     margin: 0;
-    padding: 0;
-}
-
-body{
-    width: 100vw;
-    height: 100vh;
-}
-
-.formulario_dinamico{
-    width: 100%;
-    height: 100%;
-    background-color: cadetblue;
-    border: 2px solid black;
+    padding: 0 ;
 }
 
 .elementos{
-    width: 50%;
-    height: 50%;
-    background-color: cornflowerblue;
     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 20px; 
+}
+.contenedor {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-.imagen-nueva{
-    height: 200px;
+.contenedor_formulario_producto_nuevo{
+    padding: 10px 10px 10px;
+    background-color: cadetblue;
+    width: 30vw;
+}
+
+#formulario_producto_nuevo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }

@@ -14,7 +14,24 @@
             
         </div>
     </form>
-    <input type="button" value="Click" onclick="">
+    <input type="button" value="Agregar Producto" onclick="">
+    <div class="contenedor_formulario_producto_nuevo">
+        <form id="formulario_producto_nuevo">
+            <!--<label for="Imagen"></label>
+            <input type="file" name="Imagen" id="imagen_producto">-->
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" id="nombre_producto">
+
+            <label for="Descripcion">Descripcion</label>
+            <textarea name="Descripcion" id="descripcion"></textarea>
+
+            <label for="Precio">Precio</label>
+            <input type="number" name="Precio" id="precio">
+        </form>
+        <button onclick="AgregarProducto(event)">Agregar</button>
+    </div>
 </body>
 <script src="js/sript.js"></script>
+<script src="js/formulario.js"></script>
 </html>
