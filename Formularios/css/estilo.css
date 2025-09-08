@@ -28,3 +28,11 @@
     display: flex;
     flex-direction: column;
 }
+
+
+
+.imagen-previsualizacion{
+    border: 2px solid black;
+    width: 100%;
+    height: 200px;
+}
