@@ -8,13 +8,13 @@
 </head>
 <body>
     <form id="formulario_dinamico" class="formulario_dinamico">
-        <label for="Cantidad">Ingresa cantidad de elementos</label>
-        <input type="number" name="Cantidad" id="cantidad" onchange="crearimagen(event)">
+        <!--<label for="Cantidad">Ingresa cantidad de elementos</label>
+        <input type="number" name="Cantidad" id="cantidad" onchange="crearimagen(event)">-->
         <div id="elementos" class="elementos">
             
         </div>
     </form>
-    <input type="button" value="Agregar Producto" onclick="">
+    <button id="agregar_formulario">Agregar otro producto</button>
     <div class="contenedor_formulario_producto_nuevo">
         <form id="formulario_producto_nuevo">
             <img id="imagen-file" class="imagen-previsualizacion" src="img/deafault.png">
@@ -22,7 +22,7 @@
             <input type="file" name="Imagen" id="imagen_producto" onchange="obtenerImagen(event)" required>
 
             <label for="Nombre">Nombre</label>
-            <input type="text" name="Nombre" id="nombre_producto" required>
+            <input type="text" name="Nombre" id="nombre" required>
 
             <label for="Descripcion">Descripcion</label>
             <textarea name="Descripcion" id="descripcion"></textarea>
@@ -33,6 +33,6 @@
         <button onclick="AgregarProducto(event)">Agregar</button>
     </div>
 </body>
-<script src="js/sript.js"></script>
+<!--<script src="js/sript.js"></script>-->
 <script src="js/formulario.js"></script>
 </html>
