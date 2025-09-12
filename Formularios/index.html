@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="header">
+        <div class="logo"></div>
+        <input type="button" value="Crear cuenta">
+        <input type="button" value="Ingresar">
+        <input type="button" value="Mis compras">
+        <img src="img/carrito.png" class="carrito">
+    </div>
     <form id="formulario_dinamico" class="formulario_dinamico">
         <!--<label for="Cantidad">Ingresa cantidad de elementos</label>
         <input type="number" name="Cantidad" id="cantidad" onchange="crearimagen(event)">-->
@@ -14,8 +21,8 @@
             
         </div>
     </form>
-    <button id="agregar_formulario">Agregar otro producto</button>
-    <div class="contenedor_formulario_producto_nuevo">
+    <input type="button" value="Agregar Producto" onclick="ocultarFormulario()">
+    <div id="contenedor_formulario_producto_nuevo" class="contenedor_formulario_producto_nuevo">
         <form id="formulario_producto_nuevo">
             <img id="imagen-file" class="imagen-previsualizacion" src="img/deafault.png">
             <label for="Imagen"></label>
