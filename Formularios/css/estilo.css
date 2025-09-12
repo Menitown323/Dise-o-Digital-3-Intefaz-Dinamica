@@ -3,6 +3,17 @@
     padding: 0 ;
 }
 
+.header{
+    width: 100vw;
+    height: 10vh;
+    background-color: cadetblue;
+    text-align: right;
+}
+
+.carrito{
+    width: 5%;
+}
+
 .elementos{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -20,6 +31,7 @@
 .contenedor_formulario_producto_nuevo{
     padding: 10px 10px 10px;
     background-color: cadetblue;
+    display: none;
     width: 30vw;
 }
 
