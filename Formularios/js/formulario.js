@@ -60,12 +60,12 @@ function mostrarProductos() {
         titulo.textContent = producto.Nombre;
         const texto = document.createElement("p");
         texto.textContent = producto.Descripcion;
-        const boton = document.createElement("button");
-        boton.textContent = "Leer mas";
+        const precio = document.createElement("p");
+        precio.textContent = producto.Precio;
         contenedor.appendChild(imagen);
         contenedor.appendChild(titulo);
         contenedor.appendChild(texto);
-        contenedor.appendChild(boton);
+        contenedor.appendChild(precio);
         elementos.appendChild(contenedor);
     });
 }
