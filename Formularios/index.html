@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <div class="logo"></div>
-        <input type="button" value="Crear cuenta">
-        <input type="button" value="Ingresar">
-        <input type="button" value="Mis compras">
-        <img src="img/carrito.png" class="carrito">
+  <header class="header">
+    <div class="logo">
+      <img src="" alt="Logo">
     </div>
-    <form id="formulario_dinamico" class="formulario_dinamico">
-        <!--<label for="Cantidad">Ingresa cantidad de elementos</label>
-        <input type="number" name="Cantidad" id="cantidad" onchange="crearimagen(event)">-->
-        <div id="elementos" class="elementos">
-            
-        </div>
+    <nav class="nav">
+      <a href="#" class="nav-link">Crear cuenta</a>
+      <a href="#" class="nav-link">Ingresar</a>
+      <a href="miscompras.html" class="nav-link">Mis compras</a>
+      <a href="#" class="nav-link carrito-link">
+        <img src="img/carrito.png" alt="Carrito" class="carrito">
+      </a>
+    </nav>
+  </header>
+
+  <form id="formulario_dinamico" class="formulario_dinamico">
+    <div id="elementos" class="elementos"></div>
+  </form>
+
+  <button class="btn-agregar" onclick="ocultarFormulario()">Agregar Producto</button>
+
+  <div id="contenedor_formulario_producto_nuevo" class="contenedor_formulario_producto_nuevo">
+    <form id="formulario_producto_nuevo">
+      <img id="imagen-file" class="imagen-previsualizacion" src="img/deafault.png">
+      
+      <label for="imagen_producto">Imagen</label>
+      <input type="file" name="Imagen" id="imagen_producto" onchange="obtenerImagen(event)" required>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" name="Nombre" id="nombre" required>
+
+      <label for="descripcion">Descripcion</label>
+      <textarea name="Descripcion" id="descripcion"></textarea>
+
+      <label for="precio">Precio</label>
+      <input type="number" name="Precio" id="precio" required>
+
+      <button type="button" onclick="AgregarProducto(event)" class="btn-guardar">Agregar</button>
     </form>
-    <input type="button" value="Agregar Producto" onclick="ocultarFormulario()">
-    <div id="contenedor_formulario_producto_nuevo" class="contenedor_formulario_producto_nuevo">
-        <form id="formulario_producto_nuevo">
-            <img id="imagen-file" class="imagen-previsualizacion" src="img/deafault.png">
-            <label for="Imagen"></label>
-            <input type="file" name="Imagen" id="imagen_producto" onchange="obtenerImagen(event)" required>
+  </div>
 
-            <label for="Nombre">Nombre</label>
-            <input type="text" name="Nombre" id="nombre" required>
-
-            <label for="Descripcion">Descripcion</label>
-            <textarea name="Descripcion" id="descripcion"></textarea>
-
-            <label for="Precio">Precio</label>
-            <input type="number" name="Precio" id="precio" required>
-        </form>
-        <button onclick="AgregarProducto(event)">Agregar</button>
-    </div>
+  <script src="js/formulario.js"></script>
+  <script src="js/fetch.js"></script>
 </body>
-<!--<script src="js/sript.js"></script>-->
-<script src="js/formulario.js"></script>
 </html>
