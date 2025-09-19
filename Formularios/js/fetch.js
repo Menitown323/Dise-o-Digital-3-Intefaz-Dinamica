@@ -1,6 +1,6 @@
 const url_api = "https://pokeapi.co/api/v2/pokemon";
 
-// Función que llama a la API principal
+
 function conexionFetch() {
   fetch(url_api)
     .then(respuesta => {
@@ -12,13 +12,11 @@ function conexionFetch() {
     })
     .then(datos => {
       datos.results.forEach(pokemon => {
-        // Llamar a cada URL de Pokémon
         peticionAJAX(pokemon.url);
       });
     })
 }
 
-// Función AJAX que obtiene cada Pokémon individual
 function peticionAJAX(url) {
   const xhr = new XMLHttpRequest();
 
@@ -34,13 +32,14 @@ function peticionAJAX(url) {
   xhr.send();
 }
 
-// Crea tarjeta de cada Pokémon
+
 function crearPokemon(pokemon) {
   console.log(pokemon.name);
   console.log(pokemon.sprites);
+  console.log(pokemon.types);
 
   const contenedor = document.createElement('div');
-  contenedor.classList.add('contenedor'); // usa la clase que tienes en tu CSS
+  contenedor.classList.add('contenedor'); 
 
   const imagen = document.createElement('img');
   imagen.src = pokemon.sprites.front_default;
@@ -48,9 +47,12 @@ function crearPokemon(pokemon) {
   contenedor.appendChild(imagen);
 
   const nombre = document.createElement('p');
-  nombre.textContent = pokemon.name;
+  nombre.textContent = "Nombre: " + pokemon.name;
   contenedor.appendChild(nombre);
 
-  // Agregamos al div pokemones en vez de body directamente
+  const tipo = document.createElement('p');
+  tipo.textContent = "Tipos: " + pokemon.types.map(type => type.type.name).join(", ");
+  contenedor.appendChild(tipo);
+
   document.getElementById('pokemones').appendChild(contenedor);
 }
