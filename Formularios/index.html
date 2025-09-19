@@ -12,42 +12,17 @@
       <img src="" alt="Logo">
     </div>
     <nav class="nav">
-      <a href="#" class="nav-link">Crear cuenta</a>
-      <a href="#" class="nav-link">Ingresar</a>
-      <a href="miscompras.html" class="nav-link">Mis compras</a>
-      <a href="#" class="nav-link carrito-link">
-        <img src="img/carrito.png" alt="Carrito" class="carrito">
-      </a>
+      <a href="index.html" class="nav-link carrito-link">Inicio</a>
+      <a href="FormularioDinamico.html" class="nav-link">Fromulario Dinamico</a>
+      <a href="API.html" class="nav-link">API</a>
     </nav>
   </header>
-
-  <form id="formulario_dinamico" class="formulario_dinamico">
-    <div id="elementos" class="elementos"></div>
-  </form>
-
-  <button class="btn-agregar" onclick="ocultarFormulario()">Agregar Producto</button>
-
-  <div id="contenedor_formulario_producto_nuevo" class="contenedor_formulario_producto_nuevo">
-    <form id="formulario_producto_nuevo">
-      <img id="imagen-file" class="imagen-previsualizacion" src="img/deafault.png">
-      
-      <label for="imagen_producto">Imagen</label>
-      <input type="file" name="Imagen" id="imagen_producto" onchange="obtenerImagen(event)" required>
-
-      <label for="nombre">Nombre</label>
-      <input type="text" name="Nombre" id="nombre" required>
-
-      <label for="descripcion">Descripcion</label>
-      <textarea name="Descripcion" id="descripcion"></textarea>
-
-      <label for="precio">Precio</label>
-      <input type="number" name="Precio" id="precio" required>
-
-      <button type="button" onclick="AgregarProducto(event)" class="btn-guardar">Agregar</button>
-    </form>
+  <div class="inicio">
+    <h2>Formulario Dinamico y conexion de APi´s</h2>
+    <p>En esta pagina esta alojado un formulaio dinamico el cual sirve para agregar tarjetas de producto en donde podremos poner una imagen, titulo, descripcion y un precio.
+      Tambien tiene una conexion con la pokeAPI que te permite ver a los pokemon con sus tipo y su sprite.
+    </p>
   </div>
 
-  <script src="js/formulario.js"></script>
-  <script src="js/fetch.js"></script>
 </body>
 </html>
