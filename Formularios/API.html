@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Pokemones</title>
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+      <img src="" alt="Logo">
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="nav-link carrito-link">Inicio</a>
+      <a href="FormularioDinamico.html" class="nav-link">Fromulario Dinamico</a>
+      <a href="API.html" class="nav-link">API</a>
+    </nav>
+  </header>
+  <button class="btn-agregar" onclick="conexionFetch()">Ver Pokemones</button>
+
+  <div id="pokemones" class="elementos"></div>
+
+  <script src="js/fetch.js"></script>
+</body>
+</html>
