@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "titulo": "The Legend of Zelda: Tears of the Kingdom",
+    "descripcion": "Explora los cielos de Hyrule con nuevas habilidades y un vasto mundo abierto lleno de secretos.",
+    "plataforma": "Nintendo Switch"
+  },
+  {
+    "id": 2,
+    "titulo": "Hollow Knight",
+    "descripcion": "Un metroidvania oscuro y desafiante ambientado en un reino subterráneo lleno de insectos y misterios.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation"
+  },
+  {
+    "id": 3,
+    "titulo": "Red Dead Redemption 2",
+    "descripcion": "Vive la historia de un forajido en el salvaje oeste con un mundo realista y emocional.",
+    "plataforma": "PC, Xbox, Playstation"
+  },
+  {
+    "id": 4,
+    "titulo": "Elden Ring",
+    "descripcion": "Un mundo abierto de fantasía oscura creado por FromSoftware con desafíos épicos y libertad total.",
+    "plataforma": "PC, Xbox, Playstation"
+  },
+  {
+    "id": 5,
+    "titulo": "Cyberpunk 2077",
+    "descripcion": "Explora Night City, una megaciudad futurista llena de tecnología, crimen y decisiones morales.",
+    "plataforma": "PC, Xbox, Playstation"
+  },
+  {
+    "id": 6,
+    "titulo": "Minecraft",
+    "descripcion": "Construye, explora y sobrevive en un mundo infinito hecho completamente de bloques.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation, Móvil"
+  },
+  {
+    "id": 7,
+    "titulo": "Overwatch 2",
+    "descripcion": "Shooter por equipos donde héroes únicos luchan en intensas batallas multijugador.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation"
+  },
+  {
+    "id": 8,
+    "titulo": "God of War: Ragnarök",
+    "descripcion": "Acompaña a Kratos y Atreus en una épica aventura nórdica para enfrentar el fin del mundo.",
+    "plataforma": "Playstation, PC"
+  },
+  {
+    "id": 9,
+    "titulo": "Assassin’s Creed Mirage",
+    "descripcion": "Vuelve a los orígenes de la saga con sigilo, parkour y una narrativa ambientada en Bagdad.",
+    "plataforma": "PC, Xbox, Playstation"
+  },
+  {
+    "id": 10,
+    "titulo": "Hades",
+    "descripcion": "Un roguelike lleno de acción en el que escapas del inframundo luchando contra dioses y monstruos.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation"
+  },
+  {
+    "id": 11,
+    "titulo": "The Witcher 3: Wild Hunt",
+    "descripcion": "Embárcate con Geralt de Rivia en una búsqueda épica para encontrar a Ciri en un mundo lleno de monstruos.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation"
+  },
+  {
+    "id": 12,
+    "titulo": "Among Us",
+    "descripcion": "Juego social donde debes descubrir quién es el impostor dentro de la tripulación espacial.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation, Móvil"
+  },
+  {
+    "id": 13,
+    "titulo": "Celeste",
+    "descripcion": "Plataformas precisas que narran una historia sobre superación personal y salud mental.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation"
+  },
+  {
+    "id": 14,
+    "titulo": "Horizon Forbidden West",
+    "descripcion": "Explora tierras postapocalípticas llenas de criaturas robóticas y tribus misteriosas.",
+    "plataforma": "Playstation, PC"
+  },
+  {
+    "id": 15,
+    "titulo": "Cuphead",
+    "descripcion": "Un juego de disparos con estética de caricaturas clásicas y combates contra jefes desafiantes.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation"
+  },
+  {
+    "id": 16,
+    "titulo": "Dead Space Remake",
+    "descripcion": "Terror espacial en una nave infestada de necromorfos, con una atmósfera intensa y visuales modernos.",
+    "plataforma": "PC, Xbox, Playstation"
+  },
+  {
+    "id": 17,
+    "titulo": "Genshin Impact",
+    "descripcion": "Juego de rol de mundo abierto con exploración, combates elementales y una historia envolvente.",
+    "plataforma": "PC, Playstation, Móvil"
+  },
+  {
+    "id": 18,
+    "titulo": "Starfield",
+    "descripcion": "Explora el espacio, crea tu nave y vive aventuras intergalácticas con cientos de planetas por descubrir.",
+    "plataforma": "PC, Xbox"
+  },
+  {
+    "id": 19,
+    "titulo": "Terraria",
+    "descripcion": "Aventura sandbox en 2D con exploración, construcción, combate y jefes épicos.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation, Móvil"
+  },
+  {
+    "id": 20,
+    "titulo": "Little Nightmares II",
+    "descripcion": "Un inquietante juego de plataformas y terror psicológico con una atmósfera sombría.",
+    "plataforma": "PC, Nintendo Switch, Xbox, Playstation"
+  }
+]

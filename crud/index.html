@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Gestor de Videojuegos</title>
+</head>
+<body>
+    <h1>Lista de Videojuegos</h1>
+    
+    <div class="contenedor-formulario-agregar">
+        <form id="formulario_agregar">
+            <div id="mensaje_error" class="mensaje" hidden></div>
+            <div>
+                <input type="text" placeholder="Título" name="titulo" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Descripción" name="descripcion" required>
+            </div>
+            <div>
+                <input type="text" placeholder="Plataforma" name="plataforma" required>
+            </div>
+        </form>
+        <button id="boton_agregar" class="agregar">Agregar</button>
+        <!-- Botón cancelar se agregará dinámicamente -->
+    </div>
+    
+    <div class="contenedor-elementos-juegos" id="contenedor_elementos_juegos"></div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
