@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canvas</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <section>
+            <div class="menu-opciones">
+                <button id="boton_circulo" title="Círculo"><i
+                        class="fa-solid fa-circle"></i></button>
+                <button id="boton_cuadrado" title="Cuadrado"><i
+                        class="fa-solid fa-square"></i></button>
+                <button id="boton_lapiz" title="Lápiz"><i
+                        class="fa-solid fa-pen"></i></button>
+                <button id="boton_linea" title="Línea"><i
+                        class="fa-solid fa-slash"></i></button>
+                <button id="boton_sticker" title="Sticker"><i
+                        class="fa-solid fa-image"></i></button>
+                <button id="boton_borrador" title="Borrador"><i
+                        class="fa-solid fa-eraser"></i></button>
+                <button id="boton_limpiar" title="Limpiar Canvas"><i
+                        class="fa-solid fa-trash"></i></button>
+                <button id="boton_deshacer" title="Deshacer"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+            </div>
+        </section>
+
+        <main>
+            <canvas class="canvas" id="canvas" width="1000"
+                height="600"></canvas>
+        </main>
+
+        <section>
+            <div class="opciones-elemento">
+                <h3>Configuraciones</h3>
+
+                <div class="imagen">
+                    <div id="imagen-seleccionada-preview" class="imagen-seleccionada"></div>
+                    <input type="file" id="seleccionar_imagen">
+                    <label for="seleccionar_imagen" title="Subir imagen">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </label>
+                </div>
+
+                <div class="grupo-opcion">
+                    <label for="color_linea">Color de línea:</label>
+                    <input type="color" id="color_linea" value="#00e0ff">
+                </div>
+
+                <div class="grupo-opcion">
+                    <label for="color_relleno">Color de relleno:</label>
+                    <input type="color" id="color_relleno" value="#ff4fd8">
+                </div>
+
+                <div class="grupo-opcion">
+                    <label for="grosor_linea">Grosor de línea:</label>
+                    <input type="range" id="grosor_linea" min="1" max="20"
+                        value="5">
+                </div>
+
+                <div class="grupo-opcion tipo-dibujo">
+                    <span>Tipo de trazo:</span>
+                    <label><input type="radio" name="tipo" id="solo_linea"
+                            checked>
+                        Solo línea</label>
+                    <label><input type="radio" name="tipo" id="con_relleno"> Con
+                        relleno</label>
+                </div>
+            </div>
+        </section>
+    </body>
+
+    <script type="module" src="js/canvas.js"></script>
+</html>
